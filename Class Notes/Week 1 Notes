@@ -1,0 +1,75 @@
+Week 1 Notes:
+
+CSS -
+Selector {
+    property: value;
+}
+
+classes use a .___
+IDs use a #___
+elements use the element name
+
+Page Composition:
+Macro Layout - Overall structure
+Micro Layouts - Element structures can be reused
+Use of flexbox and grids
+
+Box model - Content , Padding, Border, Margin
+box-sizing: content-box; - determine size width and height of content portion of the box
+box-sizing: border-box; - never set default , must set width and height, determine content, padding, 
+and border altogether
+
+Responsive Design:
+Media Queries-
+Allows developers to ask questions about users devices
+Used for themeing (Light or dark mode)
+Used for screen size
+
+Flexible Designs-
+Work with many screen sizes
+rem, em instead of px -hard values        1 em = 16 px - default font size     rem - change font size based on user preference
+Use % instead of px -soft values
+min-width, max-width, min-height,max-height - give bounds to containers
+Flexbox - display: flex;  - its children will be automatically laid out
+Layouts are detrmined by the parent's container size, as well as css properties on the parent and children elements
+Ios - autolayout  and Android - constraints and Figma - auto-layout frame
+
+flex-direction: row | row-reverse | column | column reverse
+row - left to right and column - top to bottom
+flex-wrap: wrap | nowrap; - children are wrapped into a new line or not
+flex-shrink can be set on children to shrink them to fit when nowrap is set
+flex-flow: <flex-direction> <flex-wrap> - combines the flex direction and flex wrap into one
+
+justify-content: normal | center | start | end | stretch | space-between | space-around | space-evenly
+- controls position of non-growing child elements along the main axis of parent container
+align-items: normal | center | start | end | baseline | stretch
+- controls the position of children along the cross axis of the container
+justify-self and align-self
+-same as justify and align but for specific child elements
+
+flex-basis: <size>
+- starting size of an elemnet in the main axis direction of parent container
+- flex-direction determines if this is width or height
+flex-grow: <number>
+- determines if and how much relative to siblings a child element should grow to fill space
+0 - no grow
+1 - will grow to fill space 
+3 - will grow 3 times as much as any sibling that has flex-grow: 1
+flex-shrink <number>
+- determine the same as flex-grow; but child will shrink to accomodate other elements
+flex: <flex-grow> <flex-shrink> <flex-basis> - All the flex into one, need two properties to use shorthand
+
+display: grid; - parent box where the children are laid out into a strict grid like fashion
+Can be flexible but needs to use media queries
+
+grid-template-columns , and grid template-rows (same as columns)
+- defines the number and size of columns - each entry is the width of a column
+px, em,rem, %, fr
+key words - auto, min-content, max-content
+
+grid-column and grid-row
+- starting and ending position of a grid item
+numbers correspond to the start of the column/row
+so grid-column: 1/4; would be spanning columns 1,2,3
+
+Local Hosting:
