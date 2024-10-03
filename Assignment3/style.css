@@ -1,0 +1,15 @@
+#colorBox
+{
+    width: 100px;
+    height: 100px;
+    background-color: #f1f1f1;
+    border: 1px solid #000000;
+}
+
+#noiseBox
+{
+    width: 700px;
+    height: 700px;
+    background-image: url('noise.png');
+    border: 1px solid #000000;
+}
